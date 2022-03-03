@@ -1,21 +1,16 @@
 package com.example.lascosasquenovemos;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.Task;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
+import android.view.View;
+import android.widget.Button;
+
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
-import java.util.Map;
-
-public class MainActivity extends AppCompatActivity {
+public class PruebaEscribirBD extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
 
@@ -23,12 +18,22 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_prueba_escribir_bd);
 
         FirebaseDatabase mDatabaseInstance = FirebaseDatabase.getInstance(getString(R.string.firebase_realtime_database_URL));
         mDatabaseInstance.setPersistenceEnabled(true);
         mDatabase = mDatabaseInstance.getReference();
 
+
+        /*
+        Button btn = new Button(this); //NO, ESTÁ MAL.
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(PruebaEscribirBD.this, PruebaLeerBD.class));
+            }
+        });
+        */
 
 //Write
         /*

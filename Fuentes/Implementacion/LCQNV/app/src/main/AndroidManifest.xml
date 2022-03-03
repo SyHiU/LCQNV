@@ -13,7 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LasCosasQueNoVemos">
         <activity
-            android:name=".MainActivity"
+            android:name=".PruebaElemsAndroid"
+            android:exported="false" />
+        <activity
+            android:name=".PruebaLeerBD"
+            android:exported="false" />
+        <activity
+            android:name=".PruebaEscribirBD"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
