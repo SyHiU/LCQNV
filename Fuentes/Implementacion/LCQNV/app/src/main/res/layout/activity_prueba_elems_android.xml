@@ -1,9 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".PruebaElemsAndroid">
-</LinearLayout>
+
+    <TextView
+        android:id="@+id/textTitulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecciona una de las siguientes opciones:"
+        android:translationX="60dp"
+        android:translationY="20dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="-39dp"
+        android:text="Opción Uno"
+        android:translationX="100dp"
+        android:translationY="100dp" />
+
+    <CheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="100dp"
+        android:translationY="150dp"
+        android:layout_marginTop="-39dp"
+        android:text="Opción Dos" />
+
+    <Button
+        android:id="@+id/buttonValidar"
+        android:layout_width="wrap_content"
+        android:translationX="250dp"
+        android:translationY="80dp"
+        android:layout_height="wrap_content"
+        android:text="Validar" />
+
+    <TextView
+        android:id="@+id/Texto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:translationY="-160dp"/>
+
+    <Button
+        android:id="@+id/buttonImagen"
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:text="Imágen" />
+
+    <ImageView
+        android:id="@+id/Imagen"
+        android:layout_width="231dp"
+        android:layout_height="189dp"
+        android:layout_below="@id/buttonImagen"
+        android:layout_marginTop="40dp"
+        android:translationX="100dp"
+        app:srcCompat="@mipmap/lqnv_logo" />
+
+    <Button
+        android:id="@+id/buttonPasarPantalla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationY="660dp"
+        android:translationX="220dp"
+        android:text="volver a incio" />
+
+</RelativeLayout>
