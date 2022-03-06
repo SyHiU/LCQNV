@@ -9,6 +9,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.firebase.database.DatabaseReference;
@@ -18,7 +19,6 @@ public class PruebaEscribirBD extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
     private Intent intent;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,17 +33,23 @@ public class PruebaEscribirBD extends AppCompatActivity {
         EditText tDescripcion = findViewById(R.id.texto_descripcion);
         Button bContinuar = findViewById(R.id.boton_continuar);
         Button validar = findViewById(R.id.boton_validar);
+        TextView feedback = findViewById(R.id.texto_feedback);
 
         validar.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View view) {
-                        mDatabase.child(String.valueOf(tNombre.getText())).setValue(String.valueOf(tDescripcion.getText())).addOnFailureListener(new OnFailureListener() {
-                            @Override
-                            public void onFailure(@NonNull Exception e) {
-                                Log.d("firebase", e.getLocalizedMessage());
-                            }
-                        });
+                        if(!String.valueOf(tNombre.getText()).equals("") && !String.valueOf(tDescripcion.getText()).equals("")){
+                            mDatabase.child(String.valueOf(tNombre.getText())).setValue(String.valueOf(tDescripcion.getText())).addOnFailureListener(new OnFailureListener() {
+                                @Override
+                                public void onFailure(@NonNull Exception e) {
+                                    Log.d("firebase", e.getLocalizedMessage());
+                                }
+                            });
+                            feedback.setText("Nombre y descripción añadidas correctamente");
+                        } else{
+                            feedback.setText("ERROR: Introduce un nombre y una descripción");
+                        }
                     }
                 });
 
@@ -51,6 +57,9 @@ public class PruebaEscribirBD extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 intent = new Intent(PruebaEscribirBD.this, PruebaLeerBD.class);
+                tNombre.setText("");
+                tDescripcion.setText("");
+                feedback.setText("");
                 startActivity(intent);
             }
         });

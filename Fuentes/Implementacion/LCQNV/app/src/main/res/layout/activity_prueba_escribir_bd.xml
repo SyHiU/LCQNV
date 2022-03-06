@@ -70,27 +70,38 @@
             app:layout_constraintStart_toStartOf="@+id/boton_continuar"
             app:layout_constraintTop_toBottomOf="@+id/lblDescripcion" />
 
+        <TextView
+            android:id="@+id/texto_feedback"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/boton_validar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
         <Button
             android:id="@+id/boton_validar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="1dp"
             android:layout_marginEnd="1dp"
-            android:layout_marginBottom="49dp"
+            android:layout_marginBottom="12dp"
             android:backgroundTint="#1F201F"
             android:backgroundTintMode="add"
-            android:text="VALIDAR"
-            app:layout_constraintBottom_toTopOf="@+id/imageView"
+            android:text="REGISTRAR"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/texto_descripcion" />
+            app:layout_constraintTop_toBottomOf="@+id/texto_feedback" />
 
         <Button
             android:id="@+id/boton_continuar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
             android:layout_marginStart="1dp"
+            android:layout_marginTop="50dp"
             android:layout_marginEnd="1dp"
             android:layout_marginBottom="49dp"
             android:backgroundTint="#1F201F"
@@ -98,6 +109,7 @@
             android:text="CONTINUAR"
             app:layout_constraintBottom_toTopOf="@+id/imageView"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/texto_descripcion" />
 
