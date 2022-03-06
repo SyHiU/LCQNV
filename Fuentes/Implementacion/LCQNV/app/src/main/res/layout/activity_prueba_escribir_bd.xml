@@ -8,31 +8,79 @@
     android:orientation="vertical"
     tools:context=".PruebaEscribirBD">
 
-    <TextView android:id="@+id/lblNombre"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escribe tu nombre" />
-    <EditText
-        android:id="@+id/texto_nombre"
-        android:layout_height="wrap_content"
-        android:layout_width="150dp"
-        android:gravity="center"
-        android:inputType="text"/>
-    <TextView android:id="@+id/lblDescripcion"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Escribe una descripción" />
-    <EditText
-        android:id="@+id/texto_descripcion"
-        android:layout_height="wrap_content"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:maxLength="2000"
-        android:inputType="text|textMultiLine"/>
+        android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/boton_continuar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="CONTINUAR" />
+        <TextView
+            android:id="@+id/lblNombre"
+            android:layout_width="200dp"
+            android:layout_height="36dp"
+            android:layout_marginTop="88dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="Escribe tu nombre"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/texto_nombre"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/texto_nombre"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/texto_nombre"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="@+id/lblDescripcion"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/lblDescripcion"
+            tools:layout_editor_absoluteY="142dp" />
+
+        <TextView
+            android:id="@+id/lblDescripcion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Escribe una descripción"
+            android:textColor="#040303"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/texto_descripcion"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="@+id/texto_descripcion"
+            tools:layout_editor_absoluteY="214dp" />
+
+        <EditText
+            android:id="@+id/texto_descripcion"
+            android:layout_width="298dp"
+            android:layout_height="wrap_content"
+            android:inputType="text|textMultiLine"
+            android:maxLength="2000"
+            app:layout_constraintEnd_toEndOf="@+id/boton_continuar"
+            app:layout_constraintStart_toStartOf="@+id/boton_continuar"
+            tools:layout_editor_absoluteY="262dp" />
+
+        <Button
+            android:id="@+id/boton_continuar"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#1F201F"
+            android:backgroundTintMode="add"
+            android:text="CONTINUAR"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="341dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="197dp"
+            android:layout_height="161dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@mipmap/lqnv_logo"
+            tools:layout_editor_absoluteY="438dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>
