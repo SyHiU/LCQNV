@@ -32,7 +32,7 @@ public class PruebaLeerBD extends AppCompatActivity {
         setContentView(R.layout.activity_prueba_leer_bd);
 
         FirebaseDatabase mDatabaseInstance = FirebaseDatabase.getInstance(getString(R.string.firebase_realtime_database_URL));
-        mDatabaseInstance.setPersistenceEnabled(true);
+        //mDatabaseInstance.setPersistenceEnabled(true);
         mDatabase = mDatabaseInstance.getReference();
 
         btn = findViewById(R.id.button1);

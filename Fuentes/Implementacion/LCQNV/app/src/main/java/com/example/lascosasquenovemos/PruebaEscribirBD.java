@@ -17,6 +17,7 @@ import com.google.firebase.database.FirebaseDatabase;
 public class PruebaEscribirBD extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
+    private Intent intent;
 
 
     @Override
@@ -31,8 +32,9 @@ public class PruebaEscribirBD extends AppCompatActivity {
         EditText tNombre = findViewById(R.id.texto_nombre);
         EditText tDescripcion = findViewById(R.id.texto_descripcion);
         Button bContinuar = findViewById(R.id.boton_continuar);
+        Button validar = findViewById(R.id.boton_validar);
 
-        bContinuar.setOnClickListener(
+        validar.setOnClickListener(
                 new View.OnClickListener(){
                     @Override
                     public void onClick(View view) {
@@ -42,10 +44,17 @@ public class PruebaEscribirBD extends AppCompatActivity {
                                 Log.d("firebase", e.getLocalizedMessage());
                             }
                         });
-                        Intent sigActividad = new Intent(PruebaEscribirBD.this, PruebaLeerBD.class);
-                        startActivity(sigActividad);
                     }
                 });
+
+        bContinuar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                intent = new Intent(PruebaEscribirBD.this, PruebaLeerBD.class);
+                startActivity(intent);
+            }
+        });
+
         /*
         Button btn = new Button(this); //NO, ESTÁ MAL.
         btn.setOnClickListener(new View.OnClickListener() {
