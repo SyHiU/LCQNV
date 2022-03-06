@@ -111,7 +111,7 @@
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/boton_continuar"
-            app:srcCompat="@mipmap/lqnv_logo" />
+            app:srcCompat="@mipmap/lcqnv_logo_sin_fondo" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

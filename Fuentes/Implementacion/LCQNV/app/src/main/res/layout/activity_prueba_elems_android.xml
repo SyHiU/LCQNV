@@ -58,9 +58,9 @@
         android:layout_width="231dp"
         android:layout_height="189dp"
         android:layout_below="@id/buttonImagen"
-        android:layout_marginTop="40dp"
-        android:translationX="100dp"
-        app:srcCompat="@mipmap/lqnv_logo" />
+        android:layout_marginTop="20dp"
+        android:translationX="90dp"
+        app:srcCompat="@mipmap/lcqnv_logo_sin_fondo" />
 
     <Button
         android:id="@+id/buttonPasarPantalla"
