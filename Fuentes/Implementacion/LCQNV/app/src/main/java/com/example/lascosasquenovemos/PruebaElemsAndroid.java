@@ -17,7 +17,6 @@ public class PruebaElemsAndroid extends AppCompatActivity {
     TextView t1;
     Button btn, btn2, btn3;
     ImageView img;
-    Intent plbd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,8 +64,7 @@ public class PruebaElemsAndroid extends AppCompatActivity {
     }
 
     private void pasarPantalla() {
-        plbd = new Intent(PruebaElemsAndroid.this, PruebaEscribirBD.class);
-        startActivity(plbd);
+        finish();
     }
 
 

@@ -55,59 +55,6 @@ public class PruebaEscribirBD extends AppCompatActivity {
             }
         });
 
-        /*
-        Button btn = new Button(this); //NO, ESTÁ MAL.
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(PruebaEscribirBD.this, PruebaLeerBD.class));
-            }
-        });
-        */
-
-//Write
-        /*
-        mDatabase.child("Estudiantes").setValue("Johan").addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.d("firebase", e.getLocalizedMessage());
-            }
-        });
-        */
-
-//Always Listener
-        /*
-        ValueEventListener postListener = new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // Get Post object and use the values to update the UI
-                Map<String, Object> map = (Map<String, Object>) dataSnapshot.getValue();
-                Log.d("firebase", "Value is: " + map);
-            }
-
-            @Override
-            public void onCancelled(DatabaseError databaseError) {
-                // Getting Post failed, log a message
-                Log.w("firebase", "loadPost:onCancelled", databaseError.toException());
-            }
-        };
-        mDatabase.addValueEventListener(postListener);
-         */
-
-//Get value
-        /*
-        mDatabase.child("Estudiantes").get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DataSnapshot> task) {
-                if (!task.isSuccessful()) {
-                    Log.e("firebase", "Error getting data", task.getException());
-                }
-                else {
-                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
-                }
-            }
-        });
-         */
     }
 
 

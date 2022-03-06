@@ -23,7 +23,7 @@ public class PruebaLeerBD extends AppCompatActivity {
     EditText id;
     String desc;
     TextView desc_view;
-    Button btn, btn2;
+    Button btn, btn2, btn3;
 
 
     @Override
@@ -37,6 +37,7 @@ public class PruebaLeerBD extends AppCompatActivity {
 
         btn = findViewById(R.id.button1);
         btn2 = findViewById(R.id.button2);
+        btn3 = findViewById(R.id.buttonPasarPantalla);
         desc_view = findViewById(R.id.lbldescIn);
 
         btn.setOnClickListener(new View.OnClickListener() {
@@ -68,6 +69,7 @@ public class PruebaLeerBD extends AppCompatActivity {
                 });
             }
         });
+
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -75,7 +77,12 @@ public class PruebaLeerBD extends AppCompatActivity {
             }
         });
 
-
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+            }
+        });
 
 
 
