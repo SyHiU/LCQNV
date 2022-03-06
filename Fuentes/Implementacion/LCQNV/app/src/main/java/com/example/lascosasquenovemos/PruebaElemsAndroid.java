@@ -35,7 +35,6 @@ public class PruebaElemsAndroid extends AppCompatActivity {
 
         img.setVisibility(View.INVISIBLE); //Hago que la imagen esté en invisible por defecto
 
-        plbd = new Intent(this, PruebaEscribirBD.class);
         inicilizar();
     }
 
@@ -66,6 +65,7 @@ public class PruebaElemsAndroid extends AppCompatActivity {
     }
 
     private void pasarPantalla() {
+        plbd = new Intent(PruebaElemsAndroid.this, PruebaEscribirBD.class);
         startActivity(plbd);
     }
 

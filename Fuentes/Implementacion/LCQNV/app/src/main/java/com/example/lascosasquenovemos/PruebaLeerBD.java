@@ -49,13 +49,15 @@ public class PruebaLeerBD extends AppCompatActivity {
                     public void onComplete(@NonNull Task<DataSnapshot> task) {
                         if (!task.isSuccessful()) {
                             Log.e("firebase", "Error getting data", task.getException());
-                            desc_view.setText("ID no encontrado");
                         }
                         else {
                             Log.d("firebase", String.valueOf(task.getResult().getValue()));
 
                             if(String.valueOf(task.getResult().getValue()) == "null"){
                                 desc_view.setText("ID no encontrado");
+                            }
+                            else if (String.valueOf(task.getResult().getValue()).contains("{")){
+                                desc_view.setText("No ha introducido nada");
                             }
                             else{
                                 desc_view.setText(String.valueOf(task.getResult().getValue()));
