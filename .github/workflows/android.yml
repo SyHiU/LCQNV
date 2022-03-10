@@ -22,6 +22,11 @@ jobs:
 
     - name: Grant execute permission for gradlew
       run: chmod +x gradlew
-      
+    - run: ./gradlew bumpPatch
+      if: startsWith(github.head_ref, 'fix/')
+    - run: ./gradlew bumpMinor
+      if: startsWith(github.head_ref, 'feat/')
+    - run: ./gradlew bumpMajor
+      if: startsWith(github.head_ref, 'perf/')
     - name: Build with Gradle
-      run: ./gradlew build        
+      run: ./gradlew build    
