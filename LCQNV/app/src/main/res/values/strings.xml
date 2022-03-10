@@ -1,4 +1,0 @@
-<resources>
-    <string name="app_name">LasCosasQueNoVemos</string>
-    <string name="firebase_realtime_database_URL">https://lascosasquenovemos-f9d7d-default-rtdb.europe-west1.firebasedatabase.app</string>
-</resources>
