@@ -21,7 +21,7 @@ jobs:
         cache: gradle
 
     - name: Grant execute permission for gradlew
-      run: chmod +x ./Fuentes/Implementacion/LCQNV/gradlew
+      run: chmod +x ./gradlew
       
     - name: Build with Gradle
-      run: ./Fuentes/Implementacion/LCQNV/gradlew build
+      run: ./gradlew build
