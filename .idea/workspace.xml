@@ -4,11 +4,74 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="916d64f8-fa77-4fe2-8b4f-cf9716dc003b" name="Default Changelist" comment="" />
+    <list default="true" id="916d64f8-fa77-4fe2-8b4f-cf9716dc003b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.github/workflows/android_build.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/google-services.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/release/app-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/release/output-metadata.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/androidTest/java/com/example/lascosasquenovemos/ExampleInstrumentedTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/java/com/example/lascosasquenovemos/PruebaElemsAndroid.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/java/com/example/lascosasquenovemos/PruebaEscribirBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/java/com/example/lascosasquenovemos/PruebaLeerBD.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/layout/activity_prueba_elems_android.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/layout/activity_prueba_escribir_bd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/layout/activity_prueba_leer_bd.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-hdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-mdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxxhdpi/lcqnv_logo_sin_fondo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/mipmap-xxxhdpi/lqnv_logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/values-night/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/main/res/values/themes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/app/src/test/java/com/example/lascosasquenovemos/ExampleUnitTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fuentes/Implementacion/LCQNV/settings.gradle" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
