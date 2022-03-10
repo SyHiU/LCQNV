@@ -35,6 +35,7 @@ public class PruebaElemsAndroid extends AppCompatActivity {
         img.setVisibility(View.INVISIBLE); //Hago que la imagen esté en invisible por defecto
 
         inicilizar();
+        
     }
 
     private void inicilizar() { //Creo los botones y le doy su funcionalidad al clickar en ellos
