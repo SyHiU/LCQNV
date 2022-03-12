@@ -26,6 +26,7 @@ jobs:
     - name: Build with Gradle
       run: ./gradlew build
       
-    - name: Run Tests
-      run: ./gradlew connectedAndroidTest
+    - run: ./gradlew tasks
+    - run: ./gradlew clean check
+    - run: ./gradlew assemble
       
