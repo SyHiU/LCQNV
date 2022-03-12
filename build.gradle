@@ -26,6 +26,18 @@ allprojects {
     }
 }
 
+
+dependencies {
+    testImplementation 'junit:junit:4.13'
+}
+
+test {
+    useJUnit()
+
+    maxHeapSize = '1G'
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
