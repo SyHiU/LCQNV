@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdk 32
-    buildToolsVersion rootProject.buildToolsVersion
     defaultConfig {
         applicationId "com.example.lascosasquenovemos"
         minSdk 21
@@ -87,15 +86,6 @@ dependencies {
     testImplementation "com.google.truth:truth:1.0.1"
     androidTestImplementation "com.google.truth:truth:1.0.1"
 
-    // App's dependencies, including test
-    implementation 'androidx.annotation:annotation:' + rootProject.androidxAnnotationVersion;
-    implementation 'com.google.guava:guava:' + rootProject.guavaVersion
-
-    // Testing-only dependencies
-    androidTestImplementation 'androidx.test:core:' + rootProject.coreVersion;
-    androidTestImplementation 'androidx.test.ext:junit:' + rootProject.extJUnitVersion;
-    androidTestImplementation 'androidx.test:runner:' + rootProject.runnerVersion;
-    androidTestImplementation 'androidx.test.espresso:espresso-core:' + rootProject.espressoVersion;
 
 
 }
