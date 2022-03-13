@@ -27,12 +27,12 @@ allprojects {
     }
 }
 
-tasks.named('test') {
-    useJUnit {
-        includeCategories 'com.testwithspring.master.UnitTest'
-    }
+tasks.withType(Test) {
+    useJUnitPlatform()
     testLogging {
-        showStandardStreams = true
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
     }
 }
 
