@@ -26,13 +26,16 @@ allprojects {
     }
 }
 
-tasks.named('test') {
-    
+tasks.named('test'){
+    useJUnitPlatform()
+
 }
-
-
 task clean(type: Delete) {
     delete rootProject.buildDir
+}
+
+testSets{
+    test
 }
 
 
