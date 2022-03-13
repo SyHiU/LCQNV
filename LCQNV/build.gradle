@@ -26,6 +26,11 @@ allprojects {
     }
 }
 
+tasks.named('test') {
+    
+}
+
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }
