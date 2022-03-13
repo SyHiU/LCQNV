@@ -32,6 +32,13 @@ android {
     useLibrary 'android.test.base'
 }
 
+
+task test {
+    doLast {
+        println 'hello world'
+    }
+}
+
 repositories {
     //mavenCentral()
     //jcenter()
