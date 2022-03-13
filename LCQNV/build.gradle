@@ -27,12 +27,9 @@ allprojects {
     }
 }
 
-tasks.withType(Test) {
-    useJUnitPlatform()
-    testLogging {
-        exceptionFormat "full"
-        events "started", "skipped", "passed", "failed"
-        showStandardStreams true
+task test {
+    doLast {
+        println 'hello world'
     }
 }
 
