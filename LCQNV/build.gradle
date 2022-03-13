@@ -1,6 +1,9 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
 buildscript {
     repositories {
         // Check that you have the following line (if not, add it):
+        mavenCentral()
         jcenter()
         google()  // Google's Maven repository
     }
@@ -8,10 +11,11 @@ buildscript {
         // Add this line
         classpath 'com.android.tools.build:gradle:7.1.2'
         classpath 'com.google.gms:google-services:4.3.10'
+        testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+        testRuntime 'org.junit.jupiter:junit-jupiter-engine:5.4.0'
+        testRuntime 'org.junit.vintage:junit-vintage-engine:5.4.0'
     }
 }
-
-
 
 plugins {
     id 'com.android.application' version '7.1.0' apply false
@@ -23,13 +27,26 @@ allprojects {
     repositories {
         // Check that you have the following line (if not, add it):
         google()  // Google's Maven repository
+        mavenCentral()
         jcenter()
     }
 }
 
-task test {
+
+task assemble {
+
     doLast {
-        println 'hello world'
+        println 'Hello World!'
+    }
+
+}
+
+task test {
+    useJUnitPlatform()
+    testLogging {
+        exceptionFormat "full"
+        events "started", "skipped", "passed", "failed"
+        showStandardStreams true
     }
 }
 
