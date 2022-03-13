@@ -28,6 +28,7 @@ jobs:
 
     - name: Build Project
       run: cd /LCQNV/app/src/test/java/com/example/lascosasquenovemos/
+    - name: buscar
       run: ls
 
     - name: Upload test report
