@@ -1,0 +1,62 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    repositories {
+        // Check that you have the following line (if not, add it):
+        jcenter()
+        google()  // Google's Maven repository
+    }
+    dependencies {
+        // Add this line
+        classpath 'com.android.tools.build:gradle:7.1.2'
+        classpath 'com.google.gms:google-services:4.3.10'
+    }
+}
+
+apply plugin: 'groovy'
+apply plugin: 'org.unbroken-dome.test-sets'
+
+plugins {
+    id 'com.android.application' version '7.1.0' apply false
+    id 'com.android.library' version '7.1.0' apply false
+}
+
+testSets {
+    integrationTest { dirName = 'integration-test' }
+}
+
+dependencies {
+    compile(
+            'org.slf4j:slf4j-api:1.7.25',
+            'org.slf4j:slf4j-log4j12:1.7.25',
+            'log4j:log4j:1.2.17'
+    )
+    testCompile(
+            'junit:junit:4.12',
+            'org.codehaus.groovy:groovy-all:2.4.11',
+            'org.spockframework:spock-core:1.1-groovy-2.4'
+    )
+}
+
+allprojects {
+    repositories {
+        // Check that you have the following line (if not, add it):
+        google()  // Google's Maven repository
+        jcenter()
+    }
+}
+
+test {
+    useJUnit {
+        includeCategories 'com.testwithspring.master.UnitTest'
+    }
+    testLogging {
+        showStandardStreams = true
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
+
+
